@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.Navbar{
+    display: flex;
+    width: 100%;
+}
+
+.Billing_c{
+    width: 400px;
+    height: 900px;
+    border: 2px solid rgb(52, 35, 164);
+    background-color: black;
+    color: white;
+}
+
+.Element{
+    background-color: rgb(35, 34, 135);
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    height: 100px;
+}
+
+.same-line{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.same-line span{
+    font-size: 2rem;
+}
+
+/* Isse NavLeft extreme left aur NavRight extreme right me space out ho jayenge */
+.Normal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border: 2px solid green;
+    height: 100px;
+}
+
+.NavSearch{
+    display: flex;
+    gap: 20px;
+}
+
+.MenuIcon{
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.search-wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.search-wrapper input{
+    padding-left: 12px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.search-icon{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Second Part for navbar */
+.NavDateLogin{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.search-wrappers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid green;
+    gap: 12px;
+    padding-left: 12px;
+    width: 250px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.Profile{
+    display: flex;
+    align-items: center;
+}
+
+.Profile img{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.left-content{
+    height: 700px;
+    width: 400px;
+    border:1px solid green;
+}
+
+/* Billing all Button */
+.All_btn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.Btn_Filter{
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.Btn_Filter:hover{
+    background-color: rgb(35, 34, 135);
+    color: white;
+}
+
+/* Yeh bachi hui poori horizontal width cover karega */
+.right-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Govind wale section ke liye padding adjustment */
+.center-soul{
+    padding: 20px 30px;
+}
+
+/* Cart for Logo */
+.center-soul{
+    display: flex;
+    gap: 40px;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    gap: 20px;
+    width: 300px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+.imageLog{
+    font-size: 1.5rem;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    height: 52px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+/* Slaes Chart Overview */
+
+.sales-chart-container {
+    display: flex ;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.LeftDivs{
+    width: 50%;
+}
+.RightDivs{
+    width: 50%;
+}
+.recent-bills{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th{
+    background: #4f46e5;
+    color: white;
+    padding: 12px;
+
+}
+td{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover{
+    background: #f5f5f5;
+}
+
+
+th,
+td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th{
+    background: #4f46e5;
+    color: white;
+}
+
+td{
+    vertical-align: middle;
+}
+/* Select catefory menu */
+
+.filter-box{
+    margin: 20px;
+}
+
+select{
+    width: 250px;
+    height: 45px;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    padding-left: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+.CenterInput{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftInput{
+    width: 360px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0 80px ;
+    background-color: white;
+    gap: 10px;
+}
+
+.leftInput svg{
+    font-size: 20px;
+    color: gray;
+}
+
+.leftInput input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: transparent;
+}
+.RightInput{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.ProductsCase{
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.ProductsCase1{
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.ActionBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.EditBtn{
+    border: none;
+    font-size: 1.6rem;
+    color: rgb(122, 122, 234);
+    cursor: pointer;
+}
+.DeleteBtn{
+    font-size: 1.6rem;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+.BillingComponent{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.ProductAdded input{
+    margin-top: 15px;
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align: center;
+}
+.ProductAdded,
+.CartTable,
+.BillSumary{
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.CartTable{
+    flex: 1;
+    min-width: 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.CartTable table{
+    width: 100%;
+    margin-top: 55px;
+}
+
+
+.ProductAdded table{
+    width: 100%;
+}
+.BillSumary p{
+    margin-top: 15px;
+}
+
+.BillP{
+    margin-top: 80px;
+    font-size: 1.5rem;
+    gap: 15px;
+}
+.GenrateBill{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.GenrateBill button{
+    height: 35px;
+    background-color: purple;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 140px;
+    gap: 10px;
+}
+#SinglePrint{
+    margin: 50px ;
+    height: 35px;
+    background-color: purple;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 140px;
+    gap: 10px;
+}
+#BtnDecInc{
+    height: 30px;
+    width: 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: coral;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.bill-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.bill-container{
+    width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.bill-container h1{
+    text-align: center;
+}
+
+.bill-container table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.bill-container table th,
+.bill-container table td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.close-btn{
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    float: right;
+}
+@media print{
+    body *{
+        visibility: hidden;
+    }
+
+    .bill-container,
+    .bill-container *{
+        visibility: visible;
+    }
+    .bill-container{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+
+    }
+    .close-btn,
+    #SinglePrint{
+        display: none;
+    }
+}
+.SameComponent{
+    display: flex;
+    gap: 200px;
+}
+.SalesInput input{
+    margin-top: 20px;
+    height:35px;
+    margin-left: 10px;
+    width: 260px;
+    font-size: 1rem;
+}
+#dateDiv input{
+    height: 35px;
+    width: 260px;
+    font-size: 1rem;
+}
+#btn-search{
+    height: 35px;
+    width: 150px;
+    background-color: rgb(79, 218, 32);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#DatesDivs{
+    display: flex;
+    gap: 20px;
+
+}
+.tdBtn{
+    display: flex;
+    justify-content: space-around;
+}
+.tdBtn button{
+    font-size: 1.5rem;
+    width: 30px;
+    cursor: pointer;
+    color: rgb(50, 50, 157);
+    border: none;
+}
+
+.CustomerChild{
+    display: flex;
+    justify-content: space-between;
+        margin-left: 15px;
+    margin-top: 12px;
+}
+.btnChild{
+    display: flex;
+    gap: 30px;
+    
+}
+.CustomerChild input{
+    height: 55px;
+    width: 350px;
+    position:relative;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
