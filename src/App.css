@@ -13,7 +13,7 @@
 }
 
 .Billing_c{
-    width: 400px;
+    width: 280px;
     height: 900px;
     border: 2px solid rgb(52, 35, 164);
     background-color: black;
@@ -117,7 +117,7 @@
 
 .left-content{
     height: 700px;
-    width: 400px;
+    width: 280px;
     border:1px solid green;
 }
 
@@ -434,8 +434,8 @@ select{
 }
 
 .bill-container{
-    width: 800px;
-    max-height: 90vh;
+    width: 95%;
+    max-height: 900px;
     overflow-y: auto;
 
     background: white;
@@ -552,3 +552,162 @@ select{
     border-radius: 20px;
     font-size: 0.9rem;
 }
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width: 768px){
+
+    /* Main Layout */
+    .Navbar{
+        flex-direction: column;
+    }
+
+    .Billing_c{
+        width: 100%;
+        height: auto;
+    }
+
+    .Normal{
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .NavSearch,
+    .NavDateLogin{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Search */
+    .search-wrapper input,
+    .search-wrappers,
+    .CustomerChild input{
+        width: 100%;
+    }
+
+    /* Dashboard Cards */
+    .center-soul{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .cart{
+        width: 100%;
+    }
+
+    /* Charts */
+    .sales-chart-container{
+        flex-direction: column;
+    }
+
+    .LeftDivs,
+    .RightDivs{
+        width: 100%;
+    }
+
+    /* Products Page */
+    .CenterInput{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .leftInput{
+        width: 100%;
+        margin: 0;
+    }
+
+    .RightInput{
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    select{
+        width: 100%;
+    }
+
+    .ProductsCase,
+    .ProductsCase1{
+        width: 100%;
+    }
+
+    /* Billing Page */
+    .BillingComponent{
+        flex-direction: column;
+    }
+
+    .ProductAdded,
+    .CartTable,
+    .BillSumary{
+        width: 100%;
+        flex: none;
+    }
+
+    .ProductAdded input{
+        width: 95%;
+    }
+
+    .BillP{
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .GenrateBill{
+        flex-direction: column;
+    }
+
+    .GenrateBill button,
+    #SinglePrint{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* Sales History */
+    .SameComponent{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #DatesDivs{
+        flex-direction: column;
+    }
+
+    .SalesInput input,
+    #dateDiv input{
+        width: 100%;
+    }
+
+    #btn-search{
+        width: 100%;
+    }
+
+    /* Customer */
+    .CustomerChild{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btnChild{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Tables */
+    table{
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Invoice */
+    .bill-container{
+        width: 95%;
+        padding: 15px;
+    }
+}
+
